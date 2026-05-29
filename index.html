@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BuildingWatch</title>
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-brand">🏗️ BuildingWatch</div>
+  <div class="nav-links">
+    <a href="#" onclick="showPage('dashboard')" id="nav-dashboard" class="active">🏠 Dashboard</a>
+    <a href="#" onclick="showPage('buildings')" id="nav-buildings">🏢 Buildings</a>
+    <a href="#" onclick="showPage('sensors')" id="nav-sensors">📡 Sensors</a>
+    <a href="#" onclick="showPage('alerts')" id="nav-alerts">🚨 Alerts</a>
+    <a href="#" onclick="showPage('reports')" id="nav-reports">📊 Reports</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div id="page-dashboard"></div>
+  <div id="page-buildings" style="display:none"></div>
+  <div id="page-sensors" style="display:none"></div>
+  <div id="page-alerts" style="display:none"></div>
+  <div id="page-reports" style="display:none"></div>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
